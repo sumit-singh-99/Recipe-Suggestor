@@ -36,25 +36,44 @@ The app integrates with TheMealDB API to fetch and display recipes, with extra f
 
 ## Clone the repository:
 
-git clone https://github.com/yourusername/recipe-ideas-app.git
+git clone https://github.com/sumit-singh-99/Recipe-Suggestor.git
 cd recipe-ideas-app
 
 Install dependencies:
-
+```bash
 npm install
+```
+Install TailwindCSS:
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
 
+Configure vite.config.js :
+```bash
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+import Tailwind in index.css :
+```bash
+@import "tailwindcss";
+```
 Start development server:
-
+```bash
 npm run dev
-
+```
 Build for production:
-
+```bash
 npm run build
-
+```
 Preview production build:
-
+```bash
 npm run preview
-
+```
 ## Project Structure
 
 ```bash
